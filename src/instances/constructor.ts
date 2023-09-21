@@ -1,4 +1,4 @@
-class LoggerTemplate {
+export default class Logger {
     name: string;
     emote: string;
     color: string;
@@ -9,15 +9,13 @@ class LoggerTemplate {
         this.emote = emote;
         this.color = color;
         this.message = message;
-        this.trigger = (log: string) => {
+        this.trigger = (log: any) => {
             console.log(
                 this.color+
                 "---------------------------------------\n"+
-                +"   "+this.emote+"  "+this.message+"  "+log
+                `${this.emote} ${this.message} ${log}`
                 +"\n---------------------------------------"
                 )
         }
     }
 }
-
-export const teste = new LoggerTemplate('DEBUG','😀','\x1b[36m',' - ')
