@@ -501,6 +501,14 @@
   "resolved" "https://registry.npmjs.org/v8-compile-cache-lib/-/v8-compile-cache-lib-3.0.1.tgz"
   "version" "3.0.1"
 
+"veclog@^1.0.1":
+  "integrity" "sha512-QIXVTW0ckYTh5VU3XLe4pf/k1QJlQQMphMrX5q6Jou9F/DwKnMpLrepLmA1B1KwZEiOf0pYWfGCmSboXx4RnRA=="
+  "resolved" "https://registry.npmjs.org/veclog/-/veclog-1.0.1.tgz"
+  "version" "1.0.1"
+  dependencies:
+    "ts-node" "^10.9.1"
+    "ts-node-dev" "^2.0.0"
+
 "wrappy@1":
   "integrity" "sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ=="
   "resolved" "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz"

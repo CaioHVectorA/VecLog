@@ -9,6 +9,7 @@
   },
   "keywords": [],
   "author": "caiohvectora",
+  "types": "./veclog.d.ts",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.6.3",
@@ -17,6 +18,7 @@
   },
   "dependencies": {
     "ts-node": "^10.9.1",
-    "ts-node-dev": "^2.0.0"
+    "ts-node-dev": "^2.0.0",
+    "veclog": "^1.0.1"
   }
 }
