@@ -63,3 +63,29 @@ A função `info` é usada para mensagens informativas. Você pode optar por cri
 ```javascript
     fetch(api).then(res => res.json()).then(data => info(data))
 ```
+
+### Configuração
+
+É possível configurar a forma que o Logger funciona, customizando o caminho do qual os arquivos de logger são criados, adicionando um prefixo e escolhendo entre HH/MM/SS ou apenas HH/MM.
+
+##### Exemplo
+
+```javascript
+// -------------- myConfig.ts
+import { Config } from 'veclog'
+
+export const myConfig = new Config({
+    path: '/logs/test_logs/',
+    timeStamp: 'HH/MM',
+    prefix: 'TESTING_'
+})
+```
+```javascript
+// -------------- app.ts
+import { info } from 'veclog'
+import { myConfig } from './myConfig.ts'
+// ...código de criação do App...
+
+app.listen(PORT, () => info(`App RUNNING on ${PORT}`, true, myConfig))
+// As customizações de "myConfig" serão aplicadas. É claro que você pode aplicar diversas configurações customizadas!
+```
