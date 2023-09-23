@@ -4,8 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "ts-node-dev src/index.ts",
-    "start": "nodemon index.js"
+    "dev": "ts-node-dev src/index.ts"
   },
   "keywords": [],
   "author": "caiohvectora",

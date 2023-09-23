@@ -42,3 +42,34 @@ export function info(log: any, store?: boolean): void;
  * @returns {void}
  */
 export function warning(log: any, store?: boolean): void;
+
+/**
+ * Configuração para personalizar o comportamento do logger.
+ */
+export interface LoggerConfig {
+    /**
+     * O caminho onde os logs serão armazenados.
+     */
+    path: string;
+
+    /**
+     * O formato de carimbo de data/hora para os logs (por exemplo, 'HH/MM/SS' ou 'HH/MM').
+     */
+    timeStamp: 'HH/MM/SS' | 'HH/MM';
+
+    /**
+     * O prefixo a ser adicionado a cada mensagem de log.
+     */
+    prefix: string;
+}
+
+/**
+ * Classe de configuração para personalizar o comportamento do logger.
+ */
+export class Config implements LoggerConfig {
+    path: string;
+    timeStamp: 'HH/MM/SS' | 'HH/MM';
+    prefix: string;
+
+    constructor(options: { path?: string, timeStamp?: 'HH/MM/SS' | 'HH/MM', prefix?: string })
+}

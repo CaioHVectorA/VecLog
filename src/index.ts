@@ -1,5 +1,3 @@
 import { debug, error, fatal, info, warning } from './instances/handlers'
-
-export { debug, error, fatal, info, warning }
-
-error('Teste',true, {path: '/logs/teste/'})
+import { Config } from './config/default'
+export { debug, error, fatal, info, warning, Config }
